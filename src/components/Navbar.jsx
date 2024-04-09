@@ -2,7 +2,7 @@
 import { Link, NavLink } from "react-router-dom";
 import barsIcon from "../icons/menu-hamburguer.svg";
 import cruzIcon from "../icons/cruz.svg";
-import dmLogo from "../../public/images/Diogo Moreira.jpeg";
+import dmLogo from "../../public/images/Diogo Moreira NoBg.png";
 import { useState } from "react";
 
 function navbar() {
