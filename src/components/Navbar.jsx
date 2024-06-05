@@ -42,35 +42,60 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-around items-center border-logo-gold border-b-2 rounded-lg w-7/8 mx-auto font-merriweather bg-color-ivory pb-2">
-        <button onClick={toggleNavbar}>
+      <nav className="flex justify-between items-center border-logo-gold border-b-2  w-7/8 mx-auto font-merriweather  pb-2 lg:hidden mt-2">
+        <button onClick={toggleNavbar} className="ml-6">
           {isOpen ? <CloseIcon /> : <BarsIcon />}
         </button>
-        <Link to="/">
-          <img src={dmLogo} alt="" className="w-28" />
-        </Link>
-        <Link className="text-md text-color-ivory font-semibold  bg-logo-gold p-2 border-logo-gold rounded-full hover:bg-logo-blue hover:border-logo-blue ">
-          Contact Me
+        <Link to="/" className="mr-4">
+          <img src={dmLogo} alt="" className="w-36" />
         </Link>
       </nav>
       {isOpen && (
-        <div className="absolute flex flex-col items-start pl-4 w-1/2 ml-8 mt-1 bg-logo-gold border-1 border-logo-gold rounded-lg font-montserrat">
+        <div className="absolute flex flex-col items-start pl-4 w-1/3 ml-8 mt-1 bg-logo-gold border-1 border-logo-gold rounded-lg z-10">
           <NavLink
             to={"/"}
-            className="  py-2 hover:bg-gray-200 text-color-ivory font-semibold"
+            className="  py-2 text-color-ivory font-semibold"
             onClick={toggleNavbar}
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to={"/projects"}
+            className="  py-2 text-color-ivory font-semibold"
+            onClick={toggleNavbar}
+          >
+            Projects
+          </NavLink>
+        </div>
+      )}
+      <nav className="hidden lg:flex items-center justify-between border-logo-gold border-b-2 rounded-lg w-full mt-6 font-merriweather  pb-2">
+        <div className="flex">
+          <Link to="/">
+            <img src={dmLogo} alt="" className="w-40 ml-12" />
+          </Link>
+        </div>
+        <div className="flex gap-28">
+          <NavLink
+            to={"/"}
+            className="  py-2  hover:underline hover:text-logo-blue text-logo-gold font-semibold text-2xl"
           >
             Home
           </NavLink>
           <NavLink
             to={"/about"}
-            className="  py-2  hover:bg-gray-200 text-color-ivory font-semibold"
-            onClick={toggleNavbar}
+            className="  py-2  hover:underline hover:text-logo-blue text-logo-gold font-semibold text-2xl active:text-logo-blue active:underline"
           >
             About Me
           </NavLink>
+          <NavLink
+            to={"/projects"}
+            className="  py-2  hover:underline hover:text-logo-blue text-logo-gold font-semibold text-2xl"
+          >
+            Projects
+          </NavLink>
         </div>
-      )}
+      </nav>
     </>
   );
 }

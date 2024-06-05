@@ -1,0 +1,17 @@
+[{
+    "id": "1",
+    "name": "Connect Dobby to the Sock",
+    "image": "../public/images/dobbyProjImg.png",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "description": "Connect Dobby to the Sock is a 2D game where players control Dobby, the beloved house-elf from the Harry Potter series, on a quest to reach the elusive sock without encountering dementors, the dreaded obstacles of the wizarding world. Crafted using the trifecta of web development - HTML, CSS, and JavaScript - this project merges nostalgic themes from the franchise with the creative power of modern web technologies, offering both an enjoyable experience and a showcase of my technical skills.",
+    "link":"https://dobby-to-sock.netlify.app/"
+  },
+{
+  "id": "2",
+  "name": "GoingCarefree",
+  "image": "../public/images/goingcarefreeImg.png",
+  "technologies": ["CSS", "TailwindCSS", "JavaScript", "React", "NodeJS", "Axios"],
+  "description": "GoingCarefree is a website created for a fictional travel agency specializing in selling vacation packages. Utilizing a modern tech stack including CSS, TailwindCSS, JavaScript, React, NodeJS, and Axios, this project demonstrates the seamless integration of front-end and back-end technologies. The site features an intuitive user interface designed to provide an enjoyable browsing experience, showcasing various vacation deals and packages with vibrant visuals and responsive design.",
+  "link":"https://goingcarefree.netlify.app"
+}
+]

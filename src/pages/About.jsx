@@ -1,42 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
-import profilePic from "../../public/images/profilepic.jpeg";
-import Carousel from "../components/Carousel";
+import CarouselTech from "../components/CarouselTech";
 function About() {
   return (
-    <div className="font-merriweather">
-      <h1 className="text-4xl text-logo-blue text-center my-4  mx-2 font-semibold">
+    <div id="about">
+      <h1 className="text-2xl tracking-tighter text-logo-blue text-left my-4  mx-2 font-semibold animate-slideinright delay-1s hidden-before-animation">
         About Me
       </h1>
 
-      <div className="flex flex-col gap-2 mx-4">
-        <img
-          src={profilePic}
-          alt=""
-          className="w-40 rounded-full mb-4 mx-auto"
-        />
-        <p className="">
-          My name is Diogo Moreira, I'm Portuguese and I was born in Porto. I
-          have worked the past 4 years in sales. I fell in love with coding, so
-          I enrolled in the Ironhack Web Development Bootcamp after
-          self-learning for a year.
-        </p>
-        <p className="">
-          As a junior full-stack developer with sales background, I blend strong
-          communication and teamwork skills with a passion for fast-paced
-          learning in tech.{" "}
-        </p>
-        <p className="">
-          Eager to apply my unique perspective on user experience to develop
-          impactful web solutions. My goal is to continue growing as a
-          professional and help my future company hit their targets.
-        </p>
+      <div className="flex flex-row gap-2 mx-2 animate-slideinright delay-1s hidden-before-animation">
+        <div className="text-left">
+          <p className="mb-2">
+            My name is Diogo Moreira, I'm Portuguese and I was born in Porto. I
+            have worked the past 4 years in sales. I fell in love with coding,
+            so I enrolled in the Ironhack Web Development Bootcamp after
+            self-learning for a year.
+          </p>
+          <p className="mb-2">
+            As a junior full-stack developer with sales background, I blend
+            strong communication and teamwork skills with a passion for
+            fast-paced learning in tech.{" "}
+          </p>
+          <p className="">
+            Eager to apply my unique perspective on user experience to develop
+            impactful web solutions. My goal is to continue growing as a
+            professional and help my future company hit their targets.
+          </p>
+        </div>
       </div>
 
-      <div className="mt-14">
-        <h2 className="text-center text-2xl font-bold  text-logo-blue">
+      <div className="mt-14 mb-16 animate-slideinup delay-2s hidden-before-animation">
+        <h2 className="text-center text-2xl font-bold  text-logo-blue tracking-tighter mb-1">
           Technologies
         </h2>
-        <Carousel></Carousel>
+        <CarouselTech></CarouselTech>
       </div>
     </div>
   );
