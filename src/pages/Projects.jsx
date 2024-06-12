@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import projects from "../db.json";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function Projects() {
   // Initialize showText as an array of booleans
@@ -17,33 +18,33 @@ function Projects() {
   };
 
   return (
-    <div className="h-screen mb-64">
-      <h1 className="text-4xl text-center text-logo-blue font-bold mt-12 tracking-tighter animate-slideinup">
+    <div className="h-full">
+      <h1 className="text-4xl lg:text-6xl  lg:mb-12 text-center text-logo-blue font-bold mt-12 tracking-tighter animate-slideinup">
         Projects
       </h1>
-      <div className="flex items-center flex-col justify-center gap-4 lg:flex-row lg:justify-around lg:items-start">
+      <div className="flex items-center flex-col justify-center gap-4 lg:gap-24 lg:flex-row lg:justify-around lg:items-start lg:flex-wrap">
         {projects.map((oneProject, index) => {
           return (
             <div
-              className="shadow-custom rounded-lg w-2/3 mt-8  bg-white shadow-logo-gold pb-4 lg:w-1/5"
+              className="shadow-custom rounded-lg w-2/3 mt-8  bg-white shadow-logo-gold pb-4 lg:w-1/4"
               key={oneProject.id}
             >
               <Link to={oneProject.link} target="_blank">
                 <img src={oneProject.image} alt="" className="rounded-t-lg" />
               </Link>
 
-              <h1 className="text-center text-logo-blue text-xl font-bold">
+              <h1 className="text-center text-logo-blue text-2xl font-bold mt-2">
                 {oneProject.name}
               </h1>
-              <h2 className="text-center text-logo-blue text-lg font-semibold">
+              <h2 className="text-center text-logo-blue text-lg lg:text-xl font-semibold h-24 flex flex-col justify-center">
                 Technologies used: <br />
-                <span className="text-sm">
+                <span className="text-sm lg:text-base">
                   {oneProject.technologies.join(", ")}
                 </span>
               </h2>
 
               <p
-                className={`p-2 text-sm transition-all duration-300 ease-in-out ${
+                className={`p-2 text-sm lg:text-base transition-all duration-300 ease-in-out text-logo-blue ${
                   !showText[index] ? "line-clamp-3 max-h-16" : "max-h-full"
                 }`}
               >
@@ -94,6 +95,9 @@ function Projects() {
             </div>
           );
         })}
+      </div>
+      <div className="mt-12">
+        <Footer> </Footer>
       </div>
     </div>
   );

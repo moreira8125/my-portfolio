@@ -42,6 +42,7 @@ function Navbar() {
 
   return (
     <>
+      {/* NAVBAR PARA TELEMOVEIS/TABLETS*/}
       <nav className="flex justify-between items-center border-logo-gold border-b-2  w-7/8 mx-auto font-merriweather  pb-2 lg:hidden mt-2">
         <button onClick={toggleNavbar} className="ml-6">
           {isOpen ? <CloseIcon /> : <BarsIcon />}
@@ -69,30 +70,35 @@ function Navbar() {
           </NavLink>
         </div>
       )}
+      {/* NAVBAR PARA PC */}
       <nav className="hidden lg:flex items-center justify-between border-logo-gold border-b-2 rounded-lg w-full mt-6 font-merriweather  pb-2">
         <div className="flex">
           <Link to="/">
-            <img src={dmLogo} alt="" className="w-40 ml-12" />
+            <img src={dmLogo} alt="" className="w-40 ml-24" />
           </Link>
         </div>
         <div className="flex gap-28">
           <NavLink
-            to={"/"}
-            className="  py-2  hover:underline hover:text-logo-blue text-logo-gold font-semibold text-2xl"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to={"/about"}
-            className="  py-2  hover:underline hover:text-logo-blue text-logo-gold font-semibold text-2xl active:text-logo-blue active:underline"
-          >
-            About Me
-          </NavLink>
-          <NavLink
             to={"/projects"}
-            className="  py-2  hover:underline hover:text-logo-blue text-logo-gold font-semibold text-2xl"
+            className="  py-2  text-logo-gold font-semibold text-4xl mr-24 flex items-end gap-2 group"
           >
-            Projects
+            <h1>Projects</h1>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 28 28"
+                strokeWidth="3"
+                stroke="currentColor"
+                className="w-8 h-8 text-logo-gold transform transition-transform group-hover:translate-x-2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </span>
           </NavLink>
         </div>
       </nav>

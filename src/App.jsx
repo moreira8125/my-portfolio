@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import "./App.css";
 import "./index.css";
@@ -8,16 +7,13 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <Navbar></Navbar>
 
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Homepage />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-        </Routes>
-      </div>
-      <Footer></Footer>
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+      </Routes>
     </div>
   );
 }
