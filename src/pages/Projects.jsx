@@ -26,14 +26,14 @@ function Projects() {
         {projects.map((oneProject, index) => {
           return (
             <div
-              className="shadow-custom rounded-lg w-2/3 mt-8  bg-white shadow-logo-gold pb-4 lg:w-1/4"
+              className="shadow-custom rounded-lg w-2/3 mt-8  bg-white shadow-logo-gold pb-4 lg:w-1/4 "
               key={oneProject.id}
             >
               <Link to={oneProject.link} target="_blank">
                 <img
                   src={oneProject.image}
                   alt=""
-                  className="rounded-t-lg transform transition-transform translate-y-2"
+                  className="rounded-t-lg hover:opacity-70 "
                 />
               </Link>
 
