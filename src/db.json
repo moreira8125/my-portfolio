@@ -1,5 +1,5 @@
 [{
-    "id": "1",
+    "id": 1,
     "name": "Padel4All",
     "image": "/images/padel4allImg.png",
     "technologies": ["React", "CSS", "TailwindCSS","MongoDB", "ExpressJS", "NodeJS", "Axios"],
@@ -7,7 +7,7 @@
     "link":"https://padel4allbcn.netlify.app/"
   },
 {
-  "id": "2",
+  "id":2,
   "name": "GoingCarefree",
   "image": "/images/goingcarefreeImg.png",
   "technologies": ["CSS", "TailwindCSS", "JavaScript", "React", "NodeJS", "Axios"],
@@ -15,19 +15,20 @@
   "link":"https://goingcarefree.netlify.app"
 },
 {
-  "id": "3",
+  "id": 3,
   "name": "Connect Dobby to the Sock",
   "image": "/images/dobbyProjImg.png",
   "technologies": ["HTML", "CSS", "JavaScript"],
-  "description": "Connect Dobby to the Sock is a 2D game where players control Dobby, the beloved house-elf from the Harry Potter series, on a quest to reach the elusive sock without encountering dementors, the dreaded obstacles of the wizarding world. Crafted using the trifecta of web development - HTML, CSS, and JavaScript - this project merges nostalgic themes from the franchise with the creative power of modern web technologies, offering both an enjoyable experience and a showcase of my technical skills.",
+  "description": "This game is not playable in tablets or mobile. Connect Dobby to the Sock is a 2D game where players control Dobby, the beloved house-elf from the Harry Potter series, on a quest to reach the elusive sock without encountering dementors, the dreaded obstacles of the wizarding world. Crafted using the trifecta of web development - HTML, CSS, and JavaScript - this project merges nostalgic themes from the franchise with the creative power of modern web technologies, offering both an enjoyable experience and a showcase of my technical skills.",
   "link":"https://dobby-to-sock.netlify.app/"
 },
 {
-  "id": "4",
+  "id": 4,
   "name": "ScoreKeeper",
   "image": "/images/scorekeeperImg.png",
   "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript"],
-  "description": "ScoreKeeper is a simple yet effective table tennis scorekeeping application that helps users track scores and manage matches. Developed using HTML, CSS, Bootstrap, and JavaScript, this project features a user-friendly interface for recording scores, keeping track of ongoing matches, and displaying match history. It's an ideal tool for casual players and enthusiasts who want to streamline their game management."
+  "description": "ScoreKeeper is a simple yet effective table tennis scorekeeping application that helps users track scores and manage matches. Developed using HTML, CSS, Bootstrap, and JavaScript, this project features a user-friendly interface for recording scores, keeping track of ongoing matches, and displaying match history. It's an ideal tool for casual players and enthusiasts who want to streamline their game management.",
+  "link": "https://scorekeeper-dm.netlify.app/"
 
 }
 ]

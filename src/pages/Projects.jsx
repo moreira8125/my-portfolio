@@ -30,12 +30,17 @@ function Projects() {
               key={oneProject.id}
             >
               <Link to={oneProject.link} target="_blank">
-                <img src={oneProject.image} alt="" className="rounded-t-lg" />
+                <img
+                  src={oneProject.image}
+                  alt=""
+                  className="rounded-t-lg transform transition-transform translate-y-2"
+                />
               </Link>
 
               <h1 className="text-center text-logo-blue text-2xl font-bold mt-2">
                 {oneProject.name}
               </h1>
+
               <h2 className="text-center text-logo-blue text-lg lg:text-xl font-semibold h-24 flex flex-col justify-center">
                 Technologies used: <br />
                 <span className="text-sm lg:text-base">
